@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Hero Banner</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero section-padding">
+      <div class="container">
+        <!-- LEFT CONTENT -->
+        <div class="hero-container">
+          <div class="hero-left">
+            <h1 class="hero-title">Master <br /><span>Craftsmanship</span></h1>
+
+            <p class="hero-subtext">
+              Every ONAMI timepiece represents over 400 hours of meticulous
+              handwork by our master watchmakers.
+            </p>
+
+            <div class="hero-features">
+              <div class="feat">⏱ Swiss Movement</div>
+              <div class="feat">🛡 5 Year Warranty</div>
+              <div class="feat">✔ Certified Authentic</div>
+            </div>
+
+            <button class="cta-btn">
+              View Collection
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-arrow-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+                />
+              </svg>
+            </button>
+            <button class="btn btn--outline fade-in" data-modal-trigger>
+              Join the Launch List
+            </button>
+            <!-- Email Modal -->
+            <div class="modal-overlay" id="modal-overlay"></div>
+            <div class="modal" id="modal">
+              <button class="modal__close" id="modal-close">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+              </button>
+              <div id="modal-form-container">
+                <h3 class="modal__title">Join the Launch List</h3>
+                <p class="modal__subtitle">
+                  Be the first to know when ONAMI launches on Kickstarter.
+                </p>
+                <form class="modal__form" id="signup-form">
+                  <input
+                    type="email"
+                    class="modal__input"
+                    placeholder="Your email address"
+                    required
+                  />
+                  <button type="submit" class="btn btn--primary">
+                    Notify Me
+                  </button>
+                </form>
+              </div>
+              <div class="modal__success" id="modal-success">
+                <div class="modal__success-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <h3 class="modal__title">You're on the list!</h3>
+                <p class="modal__subtitle">
+                  We'll notify you the moment we launch.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SLIDER -->
+          <div class="hero-right">
+            <div class="slider-track">
+              <!-- SLIDE 1 -->
+              <div class="slide">
+                <div class="grid-gallery">
+                  <div class="">
+                    <img src="/assets/watch-detail-1.jpg" alt="" />
+                  </div>
+                  <div class="grid-top-small pt-32px">
+                    <img src="/assets/watch-detail-3.jpg" alt="" />
+                  </div>
+                  <div class="grid-bottom-left pb-32px">
+                    <img src="/assets/watch-detail-2.jpg" alt="" />
+                  </div>
+                  <div class="grid-bottom-big">
+                    <img src="/assets/watch-detail-4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="slide">
+                <div class="grid-gallery">
+                  <div class="grid-big">
+                    <img src="./assets/watch-detail-3.jpg" />
+                  </div>
+                  <div class="grid-mid">
+                    <img src="./assets/watch-detail-1.jpg" />
+                  </div>
+                  <div class="grid-small">
+                    <img src="./assets/watch-detail-4.jpg" />
+                  </div>
+                  <div class="grid-wide">
+                    <img src="./assets/watch-detail-2.jpg" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 3 -->
+              <div class="slide">
+                <div class="grid-gallery">
+                  <div class="grid-big">
+                    <img src="./assets/watch-detail-2.jpg" />
+                  </div>
+                  <div class="grid-mid">
+                    <img src="./assets/watch-detail-4.jpg" />
+                  </div>
+                  <div class="grid-small">
+                    <img src="./assets/watch-detail-1.jpg" />
+                  </div>
+                  <div class="grid-wide">
+                    <img src="./assets/watch-detail-3.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOTS -->
+            <div class="slider-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-padding"></div>
+
+    <script src="script.js"></script>
+
+    <!-- <script>
+    // ========================================
+    // ONAMI Website JavaScript
+    // ========================================
+    
+    (function() {
+      'use strict';
+      const modalOverlay = document.getElementById('modal-overlay');
+      const modal = document.getElementById('modal');
+      const modalClose = document.getElementById('modal-close');
+      const modalTriggers = document.querySelectorAll('[data-modal-trigger]');
+      const signupForm = document.getElementById('signup-form');
+      const modalFormContainer = document.getElementById('modal-form-container');
+      const modalSuccess = document.getElementById('modal-success');
+      const mobileCta = document.getElementById('mobile-cta');
+      
+     
+      // ----- Modal -----
+      function openModal() {
+        modalOverlay.classList.add('modal-overlay--visible');
+        modal.classList.add('modal--visible');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeModal() {
+        modalOverlay.classList.remove('modal-overlay--visible');
+        modal.classList.remove('modal--visible');
+        document.body.style.overflow = '';
+        setTimeout(() => {
+          modalFormContainer.style.display = 'block';
+          modalSuccess.classList.remove('modal__success--visible');
+        }, 300);
+      }
+      modalTriggers.forEach(trigger => {
+        trigger.addEventListener('click', openModal);
+      });
+      modalClose.addEventListener('click', closeModal);
+      modalOverlay.addEventListener('click', closeModal);
+      signupForm.addEventListener('submit', handleFormSubmit);
+      
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+      });
+      
+      setupAnimations();
+      handleScroll();
+      
+    })();
+     </script> -->
+  </body>
+</html>
