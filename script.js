@@ -336,7 +336,6 @@ if (!countdownBar.classList.contains("hidden")) {
   setInterval(updateCountdown, 1000)
 }
 
-// ===== Smooth Scroll for Anchor Links =====
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -351,7 +350,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// ===== Intersection Observer for Animations =====
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
