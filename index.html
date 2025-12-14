@@ -23,37 +23,78 @@
 <body>
 
 <!-- ================= HEADER ================= -->
-<header class="header" id="header">
-  <div class="header-container">
-    <a href="#" class="logo">DOUSSOT</a>
+  <!-- Sticky Header -->
+    <header class="header" id="header">
+        <div class="header-container container">
+            <a href="#" class="logo">DOUSSOT</a>
+            <nav class="nav">
+                <a href="#story" class="nav-link">Story</a>
+                <!-- Added mega menu dropdown for Collection -->
+                <div class="nav-item-dropdown">
+                    <a href="#variants" class="nav-link">Collection</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-menu-column">
+                                <h4 class="mega-menu-title">ONAMI Collection</h4>
+                                <p class="mega-menu-desc">Four unique expressions of sculptural design</p>
+                            </div>
+                            <div class="mega-menu-variants">
+                                <a href="#variants" class="mega-menu-item" data-variant="magma-orange">
+                                    <div class="mega-menu-swatch" style="background: linear-gradient(135deg, #D9692B 0%, #b5551f 100%);"></div>
+                                    <div class="mega-menu-item-info">
+                                        <span class="mega-menu-item-name">Magma Orange</span>
+                                        <span class="mega-menu-item-price">CHF 1,290</span>
+                                    </div>
+                                </a>
+                                <a href="#variants" class="mega-menu-item" data-variant="magma-red">
+                                    <div class="mega-menu-swatch" style="background: linear-gradient(135deg, #8B1E22 0%, #5a1315 100%);"></div>
+                                    <div class="mega-menu-item-info">
+                                        <span class="mega-menu-item-name">Magma Red</span>
+                                        <span class="mega-menu-item-tag">Founder's Edition</span>
+                                    </div>
+                                </a>
+                                <a href="#variants" class="mega-menu-item" data-variant="anthracite">
+                                    <div class="mega-menu-swatch" style="background: linear-gradient(135deg, #2B2E31 0%, #1a1c1f 100%);"></div>
+                                    <div class="mega-menu-item-info">
+                                        <span class="mega-menu-item-name">Anthracite</span>
+                                        <span class="mega-menu-item-price">CHF 1,290</span>
+                                    </div>
+                                </a>
+                                <a href="#variants" class="mega-menu-item" data-variant="sage">
+                                    <div class="mega-menu-swatch" style="background: linear-gradient(135deg, #7A8B6E 0%, #5a6b4e 100%);"></div>
+                                    <div class="mega-menu-item-info">
+                                        <span class="mega-menu-item-name">Sage</span>
+                                        <span class="mega-menu-item-price">CHF 1,290</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mega-menu-cta">
+                                <a href="#variants" class="mega-menu-link">View All Variants →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#specifications" class="nav-link">Specifications</a>
+            </nav>
+            <!-- Wrapped button text in span for hover effect styling -->
+            <button class="cta-btn header-cta" id="headerCta"><span>Join the Launch List</span></button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-    <nav class="nav">
-      <a href="#story" class="nav-link">Story</a>
-      <a href="#variants" class="nav-link">Variants</a>
-      <a href="#hero" class="nav-link">Specifications</a>
-    </nav>
-
-    <button class="cta-btn header-cta" id="headerCta">
-      <span>Join the Launch List</span>
-    </button>
-
-    <button class="mobile-menu-btn" id="mobileMenuBtn">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<!-- ================= MOBILE NAV ================= -->
-<div class="mobile-nav" id="mobileNav">
-  <nav class="mobile-nav-links">
-    <a href="#story" class="mobile-nav-link">Story</a>
-    <a href="#variants" class="mobile-nav-link">Variants</a>
-    <a href="#specifications" class="mobile-nav-link">Specifications</a>
-    <button class="cta-btn mobile-cta" id="mobileCta">
-      Join the Launch List
-    </button>
-  </nav>
-</div>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <nav class="mobile-nav-links">
+            <a href="#story" class="mobile-nav-link">Story</a>
+            <a href="#variants" class="mobile-nav-link">Collection</a>
+            <a href="#specifications" class="mobile-nav-link">Specifications</a>
+            <button class="cta-btn mobile-cta" id="mobileCta">Join the Launch List</button>
+        </nav>
+    </div>
 
 <!-- ================= HERO ================= -->
 <section class="container">
@@ -372,24 +413,27 @@
 
 
 <!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-brand">
-      <span class="footer-logo">DOUSSOT</span>
-      <p class="footer-tagline">Sculpting Time, After Time.</p>
-    </div>
-
-    <div class="footer-links">
-      <a href="#story">Story</a>
-      <a href="#variants">Variants</a>
-      <a href="#specifications">Specifications</a>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2025 Doussot. All rights reserved.</p>
-  </div>
-</footer>
+   <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">DOUSSOT</span>
+                <p class="footer-tagline">Sculpting Time, After Time.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#story">Story</a>
+                <a href="#variants">Collection</a>
+                <a href="#specifications">Specifications</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Doussot. All rights reserved.</p>
+        </div>
+    </footer>
 
 <!-- ================= MOBILE STICKY CTA ================= -->
 <div class="mobile-sticky-cta">
