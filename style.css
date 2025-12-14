@@ -465,10 +465,8 @@ button {
   padding: 10px;
 }
 
-.mobile-menu-btn span {
-  width: 24px;
-  height: 2px;
-  background-color: var(--pure-white);
+.mobile-menu-btn img{
+ 
   transition: all 0.3s ease;
 }
 
