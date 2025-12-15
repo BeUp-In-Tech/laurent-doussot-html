@@ -168,38 +168,20 @@ button {
   justify-content: space-between;
 }
 
-/* Enhanced logo with subtle hover glow effect */
+
+
 .logo {
-  font-size:35px;
-  font-weight: 600;
-  letter-spacing: 0.35em;
-  color: var(--pure-white);
-  text-transform: uppercase;
-  position: relative;
-  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
-.logo::before {
-  content: "";
-  position: absolute;
-  inset: -10px -15px;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(217, 105, 43, 0.15) 0%,
-    transparent 70%
-  );
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: -1;
+.logo img {
+  height: 60px;  
+  width: auto;
+  object-fit: contain;
 }
 
-.logo:hover::before {
-  opacity: 1;
-}
 
-.logo:hover {
-  color: var(--orange-magma);
-}
 
 .nav {
   display: flex;
@@ -515,7 +497,7 @@ button {
 .hero {
   min-height: 100vh;
   display: flex;
-  gap: 10px;
+  gap: 80px;
   align-items: center;
   position: relative;
   justify-content: space-between;
@@ -564,7 +546,7 @@ button {
 
 .hero-image img {
   max-width: 100%;
-  height: 450px;
+  height: 300px;
   object-fit: cover;
   filter: drop-shadow(0 40px 80px rgba(51, 50, 50, 0.5));
 }
@@ -576,12 +558,13 @@ button {
   inset: -20px;
   border-radius: 32px;
   background: radial-gradient(
+   
     circle,
-    rgba(0, 102, 255, 0.35),
-    rgba(0, 102, 255, 0.08),
+    rgba(14, 16, 39, 0.45),
+    rgba(44, 43, 43, 0.1),
     transparent
   );
-  filter: blur(40px);
+  filter: blur(45px);
   transition: all 0.6s ease;
   z-index: 0;
 }
@@ -590,8 +573,8 @@ button {
 .hero-image:hover::before {
   background: radial-gradient(
     circle,
-    rgba(14, 16, 39, 0.45),
-    rgba(44, 43, 43, 0.1),
+    rgba(0, 102, 255, 0.35),
+    rgba(0, 102, 255, 0.08),
     transparent
   );
   transform: scale(1.1);
@@ -1238,6 +1221,89 @@ button {
 }
 
 
+/* get-early-access-section  */
+
+.get-early-access-section{
+
+  .get-early-access-form{
+      display: flex;
+  justify-content: center
+  }
+
+  .modal-submit {
+  width: fit-content;
+  display: flex;
+  justify-content: center
+}
+
+.get-early-access-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px 20px;
+  background-color: var(--slate-grey);
+  border: 1px solid transparent;
+  color: var(--pure-white);
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  transition: border-color 0.3s ease;
+}
+
+
+.get-early-access-input:focus{
+   outline: none;
+}
+
+.cta-form-submit:hover {
+  background-color: var(--orange-magma);
+}
+
+.cta-form-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  background-color: var(--deep-blue);
+  color: var(--pure-white);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.get-early-access-content {
+  text-align: center;
+}
+
+.get-early-access-title {
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pure-white);
+  margin-bottom: 10px;
+}
+
+.get-early-access-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--soft-silver);
+  margin-bottom: 2rem;
+}
+
+.get-early-access-note {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--soft-silver);
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+}
+
 
 /* ===== Footer ===== */
 .footer {
@@ -1251,7 +1317,7 @@ button {
   display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 60px;
-  align-items: start;
+  align-items: center;
   margin-bottom: 60px;
 }
 
@@ -1289,6 +1355,16 @@ button {
   transition: color 0.3s ease;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;  
+  width: auto;
+  object-fit: contain;
+}
 
 
 .footer-links a::after {
@@ -1600,13 +1676,16 @@ button {
   }
 
   .footer-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     text-align: center;
   }
 
   .footer-links {
+    flex-direction: column;
     justify-content: center;
+    gap: 20px;
   }
 
   .footer-social {
@@ -1681,4 +1760,25 @@ button {
   .modal {
     padding: 40px 25px;
   }
+}
+
+
+
+.read-more-content {
+  display: none;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #d9692b;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.read-more-btn:hover {
+  opacity: 0.8;
 }

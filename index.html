@@ -1,461 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DOUSSOT ONAMI | Sculptural Dive Watch</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOUSSOT ONAMI | Sculptural Dive Watch</title>
 
-  <meta
-    name="description"
-    content="A sculptural dive watch shaped by movement, light, and the strength of the Ocean. Join the launch list for ONAMI."
-  />
+    <meta
+      name="description"
+      content="A sculptural dive watch shaped by movement, light, and the strength of the Ocean. Get Early Access for ONAMI." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
 
-  <link rel="stylesheet" href="./style.css" />
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
 
-<!-- ================= HEADER ================= -->
-  <!-- Sticky Header -->
+    <!-- ================= HEADER ================= -->
+    <!-- Sticky Header -->
     <header class="header" id="header">
-        <div class="header-container container">
-            <a href="#" class="logo">DOUSSOT</a>
-            <nav class="nav">
-                <a href="#story" class="nav-link">Story</a>
-                <!-- Added mega menu dropdown for Collection -->
-                <div class="nav-item-dropdown">
-                    <a href="#variants" class="nav-link">Collection</a>
-                    <div class="mega-menu">
-                        <div class="mega-menu-inner">
-                            <div class="mega-menu-column">
-                                <h4 class="mega-menu-title">ONAMI Collection</h4>
-                                <p class="mega-menu-desc">Four unique expressions of sculptural design</p>
-                            </div>
-                            <div class="mega-menu-variants">
-                                <a href="#variants" class="mega-menu-item" data-variant="magma-orange">
-                                    <div class="mega-menu-swatch" style="background: linear-gradient(135deg, #D9692B 0%, #b5551f 100%);"></div>
-                                    <div class="mega-menu-item-info">
-                                        <span class="mega-menu-item-name">Magma Orange</span>
-                                        <span class="mega-menu-item-price">CHF 1,290</span>
-                                    </div>
-                                </a>
-                                <a href="#variants" class="mega-menu-item" data-variant="magma-red">
-                                    <div class="mega-menu-swatch" style="background: linear-gradient(135deg, #8B1E22 0%, #5a1315 100%);"></div>
-                                    <div class="mega-menu-item-info">
-                                        <span class="mega-menu-item-name">Magma Red</span>
-                                        <span class="mega-menu-item-tag">Founder's Edition</span>
-                                    </div>
-                                </a>
-                                <a href="#variants" class="mega-menu-item" data-variant="anthracite">
-                                    <div class="mega-menu-swatch" style="background: linear-gradient(135deg, #2B2E31 0%, #1a1c1f 100%);"></div>
-                                    <div class="mega-menu-item-info">
-                                        <span class="mega-menu-item-name">Anthracite</span>
-                                        <span class="mega-menu-item-price">CHF 1,290</span>
-                                    </div>
-                                </a>
-                                <a href="#variants" class="mega-menu-item" data-variant="sage">
-                                    <div class="mega-menu-swatch" style="background: linear-gradient(135deg, #7A8B6E 0%, #5a6b4e 100%);"></div>
-                                    <div class="mega-menu-item-info">
-                                        <span class="mega-menu-item-name">Sage</span>
-                                        <span class="mega-menu-item-price">CHF 1,290</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="mega-menu-cta">
-                                <a href="#variants" class="mega-menu-link">View All Variants →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#specifications" class="nav-link">Specifications</a>
-            </nav>
-            <!-- Wrapped button text in span for hover effect styling -->
-            <button class="cta-btn header-cta" id="headerCta"><span>Join the Launch List</span></button>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-               <img src="./assets/Menu-Button.svg" alt="">
-            </button>
-        </div>
+      <div class="header-container container">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+          <img
+            src="./assets/DOUSSOT_Primary_Horizontal_Master-WHITE.png"
+            alt="DOUSSOT" />
+        </a>
+
+        <!-- Navigation -->
+        <nav class="nav">
+          <a href="#story" class="nav-link">Story</a>
+
+          <div class="nav-item-dropdown">
+            <a href="#variants" class="nav-link">Collection</a>
+
+          </div>
+
+          <a href="#specifications" class="nav-link">Specifications</a>
+        </nav>
+
+        <!-- CTA -->
+        <button class="cta-btn header-cta" id="headerCta">
+          <span>Get Early Access</span>
+        </button>
+
+        <!-- Mobile -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <img src="./assets/Menu-Button.svg" alt="Menu" />
+        </button>
+      </div>
     </header>
 
     <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobileNav">
-        <nav class="mobile-nav-links">
-            <a href="#story" class="mobile-nav-link">Story</a>
-            <a href="#variants" class="mobile-nav-link">Collection</a>
-            <a href="#specifications" class="mobile-nav-link">Specifications</a>
-            <button class="cta-btn mobile-cta" id="mobileCta">Join the Launch List</button>
-        </nav>
+      <nav class="mobile-nav-links">
+        <a href="#story" class="mobile-nav-link">Story</a>
+        <a href="#variants" class="mobile-nav-link">Collection</a>
+        <a href="#specifications" class="mobile-nav-link">Specifications</a>
+        <button class="cta-btn mobile-cta" id="mobileCta">Get Early
+          Access</button>
+      </nav>
     </div>
 
-<!-- ================= HERO ================= -->
-<section class="container">
-  <div class="hero" id="hero">
-    <div class="hero-content">
-      <span class="hero-tag">Introducing</span>
-      <h1 class="hero-title">DOUSSOT<br />ONAMI</h1>
-      <p class="hero-subtitle">
-        A sculptural dive watch shaped by movement, light, and the strength of the Ocean
-      </p>
-      <button class="cta-btn hero-cta" id="heroCta">
-        Join the Launch List
-      </button>
-    </div>
-
-    <div class="hero-image">
-      <img src="./assets/collection-1-removebg.png" alt="DOUSSOT ONAMI Watch" />
-    </div>
-
-    <div class="scroll-indicator">
-      <span>Scroll to discover</span>
-      <div class="mouse-icon">
-        <img src="./assets/mouse-white-icon.svg" alt="Scroll" />
-      </div>
-      <div class="scroll-line"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= STORY BLOCKS ================= -->
-<section class="container" id="story">
-  <div class="story-block section-padding">
-    <div class="story-content">
-      <span class="section-tag">The Meaning</span>
-      <h2 class="section-title">THE MEANING OF “ONAMI”</h2>
-      <p class="section-text">
-        Onami means “big wave” in Japanese — a name that reflects the forces
-        that have shaped my work for decades.
-      </p>
-    </div>
-    <div class="story-image">
-      <img src="./assets/the-meaning.webp" alt="Ocean Wave" />
-    </div>
-  </div>
-</section>
-
-<section class="story-block-alt section-padding">
-  <div class="story-block container">
-    <div class="story-image">
-      <img src="./assets/the-0story-hero-img.webp" alt="Sculptural Origins" />
-    </div>
-    <div class="story-content">
-      <span class="section-tag">The Artist</span>
-      <h2 class="section-title">SCULPTURAL ORIGINS</h2>
-      <p class="section-text">
-        As a designer, sculptor, and lifelong surfer, I have always respected
-        the power and beauty of the ocean. Its curves, shifting lines, and
-        movement of light influence everything I create.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="container">
-  <div class="story-block section-padding">
-    <div class="story-content">
-      <span class="section-tag">The Creation</span>
-      <h2 class="section-title">HOW ONAMI WAS CREATED</h2>
-      <p class="section-text">
-        ONAMI was born from sculpted volumes, natural curvature, and flowing
-        transitions inspired by waves. As light moves across the case, it
-        reveals tension and depth.
-      </p>
-      <p class="section-text-secondary">
-        A tool watch shaped by nature — refined by hand.
-      </p>
-    </div>
-    <div class="story-image">
-      <img src="./assets/watch-detail-2.jpg" alt="ONAMI Watch Detail" />
-    </div>
-  </div>
-</section>
-<!-- ================= ENGINEERED FOR THE OCEAN ================= -->
-<section class="engineered-section section-padding">
-  <div class="container engineered-layout">
-
-    <div class="story-image">
-      <img src="./assets/watch-detail-1.jpg" alt="ONAMI engineered for the ocean" />
-    </div>
-
-    <div class="engineered-content">
-      <span class="section-tag">Performance</span>
-      <h2 class="section-title">ENGINEERED FOR THE OCEAN</h2>
-
-      <p class="section-text">
-        ONAMI is designed as a true dive watch — not a styling exercise.
-      </p>
-
-      <p class="section-text">
-        With 200 meters of water resistance, a slim Japanese automatic movement,
-        and a case sculpted to perform under pressure, ONAMI balances function
-        with form.
-      </p>
-
-      <p class="section-text-secondary">
-        A tool watch shaped by nature, refined by hand, and built for depth.
-      </p>
-
-      <div class="engineered-specs">
-        <div class="spec-item">
-          <span class="spec-value">200m</span>
-          <span class="spec-label">Water Resistance</span>
+    <!-- ================= HERO ================= -->
+    <section class="container">
+      <div class="hero" id="hero">
+        <div class="hero-content">
+          <span class="hero-tag">Introducing</span>
+          <h1 class="hero-title">DOUSSOT<br />ONAMI</h1>
+          <p class="hero-subtitle">
+            A sculptural dive watch shaped by movement, light, and the strength
+            of the Ocean
+          </p>
+          <button class="cta-btn hero-cta" id="heroCta">
+            Get Early Access
+          </button>
         </div>
 
-        <div class="spec-item">
-          <span class="spec-value">Miyota 9039</span>
-          <span class="spec-label">Japanese Automatic</span>
+        <div class="hero-image">
+          <a href="#variants" class="hero-image-link">
+
+            <img src="./assets/03-01-4VARIANT.png"
+              alt="DOUSSOT ONAMI Watch" />
+          </a>
         </div>
 
-        <div class="spec-item">
-          <span class="spec-value">Steel</span>
-          <span class="spec-label">Sculpted Case</span>
+        <div class="scroll-indicator">
+          <span>Scroll to discover</span>
+          <div class="mouse-icon">
+            <img src="./assets/mouse-white-icon.svg" alt="Scroll" />
+          </div>
+          <div class="scroll-line"></div>
         </div>
       </div>
-    </div>
+    </section>
 
-    
+    <!-- ================= STORY BLOCKS ================= -->
+    <section class="container" id="story">
+      <div class="story-block section-padding">
+        <div class="story-content">
+          <span class="section-tag">The Meaning</span>
+          <h2 class="section-title">THE MEANING OF “ONAMI”</h2>
+          <p  class="section-text read-more-text">
+            Onami means “big wave” in Japanese — a name that reflects the forces
+            that have shaped my work for decades.
+          </p>
+        </div>
+        <div class="story-image">
+          <img src="./assets/the-meaning.webp" alt="Ocean Wave" />
+        </div>
+      </div>
+    </section>
 
-  </div>
-</section>
+    <section class="story-block-alt section-padding">
+      <div class="story-block container">
+        <div class="story-image">
+          <img src="./assets/the-0story-hero-img.webp"
+            alt="Sculptural Origins" />
+        </div>
+        <div class="story-content">
+          <span class="section-tag">The Artist</span>
+          <h2 class="section-title">SCULPTURAL ORIGINS</h2>
+          <p  class="section-text read-more-text">
+            As a designer, sculptor, and lifelong surfer, I have always
+            respected
+            the power and beauty of the ocean. Its curves, shifting lines, and
+            movement of light influence everything I create.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section class="container">
+      <div class="story-block section-padding">
+        <div class="story-content">
+          <span class="section-tag">The Creation</span>
+          <h2 class="section-title">HOW ONAMI WAS CREATED</h2>
+          <p  class="section-text read-more-text">
+            ONAMI was born from sculpted volumes, natural curvature, and flowing
+            transitions inspired by waves. As light moves across the case, it
+            reveals tension and depth.
+          </p>
+          <p class="section-text-secondary">
+            A tool watch shaped by nature — refined by hand.
+          </p>
+        </div>
+        <div class="story-image">
+          <img src="./assets/watch-detail-2.jpg" alt="ONAMI Watch Detail" />
+        </div>
+      </div>
+    </section>
+    <!-- ================= ENGINEERED FOR THE OCEAN ================= -->
+    <section class="engineered-section section-padding">
+      <div class="container engineered-layout">
 
-  <!-- ================= VARIANT RIBBON ================= -->
-<section class="variant-ribbon" id="variants">
-  <div class="variant-ribbon-header">
-    <h2 class="variant-ribbon-title">ONAMI VARIANTS</h2>
-    <p class="variant-ribbon-subtitle">
-      Explore the ONAMI dial variations
-    </p>
-  </div>
+        <div class="story-image">
+          <img src="./assets/watch-detail-1.jpg"
+            alt="ONAMI engineered for the ocean" />
+        </div>
 
-  <div class="variant-selector">
-    <button class="variant-btn active" data-variant="orange">
-      <span class="variant-color" style="background: linear-gradient(135deg, #D9692B, #8B4513);"></span>
-      <span class="variant-name">Magma Orange</span>
-    </button>
+        <div class="engineered-content">
+          <span class="section-tag">Performance</span>
+          <h2 class="section-title">ENGINEERED FOR THE OCEAN</h2>
 
-    <button class="variant-btn" data-variant="red">
-      <span class="variant-color" style="background: linear-gradient(135deg, #8B1E22, #4A0E10);"></span>
-      <span class="variant-name">Magma Red</span>
-      <span class="variant-badge">Founder’s</span>
-    </button>
+          <p  class="section-text read-more-text">
+            ONAMI is designed as a true dive watch — not a styling exercise.
+          </p>
 
-    <button class="variant-btn" data-variant="anthracite">
-      <span class="variant-color" style="background: linear-gradient(135deg, #2B2E31, #0E0F11);"></span>
-      <span class="variant-name">Anthracite</span>
-    </button>
+          <p  class="section-text read-more-text">
+            With 200 meters of water resistance, a slim Japanese automatic
+            movement,
+            and a case sculpted to perform under pressure, ONAMI balances
+            function
+            with form.
+          </p>
 
-    <button class="variant-btn" data-variant="sage">
-      <span class="variant-color" style="background: linear-gradient(135deg, #6B8E6B, #4A6B4A);"></span>
-      <span class="variant-name">Sage</span>
-    </button>
-  </div>
-</section>
+          <p class="section-text-secondary">
+            A tool watch shaped by nature, refined by hand, and built for depth.
+          </p>
 
-<!-- ================= PRODUCT SECTION ================= -->
-<section class="container">
-  <div class="product-section section-padding" id="product">
+          <div class="engineered-specs">
+            <div class="spec-item">
+              <span class="spec-value">200m</span>
+              <span class="spec-label">Water Resistance</span>
+            </div>
 
-    <!-- Variant Header -->
-    <div class="variant-header" id="variantHeader">
-      <h2 class="variant-title" id="variantTitle">
-        ONAMI – MAGMA ORANGE
-      </h2>
+            <div class="spec-item">
+              <span class="spec-value">Miyota 9039</span>
+              <span class="spec-label">Japanese Automatic</span>
+            </div>
 
-      <p class="variant-description" id="variantDescription">
-        A dial that glows with warmth and depth, shifting from inner radiance
-        to deep burnt ember at the perimeter. Its layered textures interact
-        with light and movement, giving the surface a living presence on the wrist.
-      </p>
-    </div>
+            <div class="spec-item">
+              <span class="spec-value">Steel</span>
+              <span class="spec-label">Sculpted Case</span>
+            </div>
+          </div>
+        </div>
 
-    <div class="product-layout">
+      </div>
+    </section>
 
-      <!-- Thumbnail Strip -->
-      <div class="thumbnail-strip">
-        <button class="thumbnail active" data-index="0">
-          <img src="/placeholder.svg?height=80&width=80" alt="Front View">
-        </button>
-        <button class="thumbnail" data-index="1">
-          <img src="/placeholder.svg?height=80&width=80" alt="Angle View">
-        </button>
-        <button class="thumbnail" data-index="2">
-          <img src="/placeholder.svg?height=80&width=80" alt="Side View">
-        </button>
-        <button class="thumbnail" data-index="3">
-          <img src="/placeholder.svg?height=80&width=80" alt="Crown Detail">
-        </button>
-        <button class="thumbnail" data-index="4">
-          <img src="/placeholder.svg?height=80&width=80" alt="Caseback">
-        </button>
-        <button class="thumbnail" data-index="5">
-          <img src="/placeholder.svg?height=80&width=80" alt="Macro Detail">
-        </button>
-        <button class="thumbnail" data-index="6">
-          <img src="/placeholder.svg?height=80&width=80" alt="Lume Shot">
-        </button>
+    <!-- ================= VARIANT RIBBON ================= -->
+    <section class="variant-ribbon" id="variants">
+      <div class="variant-ribbon-header">
+        <h2 class="variant-ribbon-title">ONAMI VARIANTS</h2>
+        <p class="variant-ribbon-subtitle">
+          Explore the ONAMI dial variations
+        </p>
       </div>
 
-      <!-- Main Image -->
-      <div class="main-image-container">
-        <img
-          src="/placeholder.svg?height=700&width=700"
-          alt="ONAMI Watch"
-          class="main-image"
-          id="mainImage"
-        >
-      </div>
-
-      <!-- Product Info Panel -->
-      <div class="product-info">
-
-        <!-- Reference only (NO PRICE) -->
-        <span class="product-ref">
-          Reference ONAMI-MO-01
-        </span>
-
-        <!-- Primary CTA -->
-        <button class="cta-btn product-cta" id="productCta">
-          Join the Launch List
+      <div class="variant-selector">
+        <button class="variant-btn active" data-variant="orange">
+          <span class="variant-color"
+            style="background: linear-gradient(135deg, #D9692B, #8B4513);"></span>
+          <span class="variant-name">Magma Orange</span>
         </button>
 
-        <!-- ================= ACCORDIONS ================= -->
-        <div class="accordions">
+        <button class="variant-btn" data-variant="red">
+          <span class="variant-color"
+            style="background: linear-gradient(135deg, #8B1E22, #4A0E10);"></span>
+          <span class="variant-name">Magma Red</span>
+          <span class="variant-badge">Founder’s</span>
+        </button>
 
-          <!-- Details -->
-          <div class="accordion" data-accordion="details">
-            <button class="accordion-header">
-              <span class="accordion-title">Details</span>
-              <span class="accordion-icon"></span>
+        <button class="variant-btn" data-variant="anthracite">
+          <span class="variant-color"
+            style="background: linear-gradient(135deg, #2B2E31, #0E0F11);"></span>
+          <span class="variant-name">Anthracite</span>
+        </button>
+
+        <button class="variant-btn" data-variant="sage">
+          <span class="variant-color"
+            style="background: linear-gradient(135deg, #6B8E6B, #4A6B4A);"></span>
+          <span class="variant-name">Sage</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCT SECTION ================= -->
+    <section class="container">
+      <div class="product-section section-padding" id="product">
+
+        <!-- Variant Header -->
+        <div class="variant-header" id="variantHeader">
+          <h2 class="variant-title" id="variantTitle">
+            ONAMI – MAGMA ORANGE
+          </h2>
+
+          <p class="variant-description" id="variantDescription">
+            A dial that glows with warmth and depth, shifting from inner
+            radiance
+            to deep burnt ember at the perimeter. Its layered textures interact
+            with light and movement, giving the surface a living presence on the
+            wrist.
+          </p>
+        </div>
+
+        <div class="product-layout">
+
+          <!-- Thumbnail Strip -->
+          <div class="thumbnail-strip">
+            <button class="thumbnail active" data-index="0">
+              <img src="/placeholder.svg?height=80&width=80" alt="Front View">
             </button>
-            <div class="accordion-content">
-              <p class="accordion-accroche">
-                A sculptural case, layered dial, and flowing contrasts shaped by light.
-              </p>
-              <div class="accordion-expanded">
-                <p>
-                  ONAMI is shaped as a sculptural object, where every surface responds
-                  to light. Brushed planes and polished transitions reveal depth
-                  as the watch moves on the wrist.
-                </p>
-                <p>
-                  The dial uses a two-layer construction with fumé gradients,
-                  textured outer rings, and cut numerals revealing a luminous
-                  lower layer.
-                </p>
-                <p class="accordion-highlight">
-                  ONAMI is a tool watch shaped by nature — refined by hand,
-                  designed to be studied, worn, and experienced.
-                </p>
+            <button class="thumbnail" data-index="1">
+              <img src="/placeholder.svg?height=80&width=80" alt="Angle View">
+            </button>
+            <button class="thumbnail" data-index="2">
+              <img src="/placeholder.svg?height=80&width=80" alt="Side View">
+            </button>
+            <button class="thumbnail" data-index="3">
+              <img src="/placeholder.svg?height=80&width=80" alt="Crown Detail">
+            </button>
+            <button class="thumbnail" data-index="4">
+              <img src="/placeholder.svg?height=80&width=80" alt="Caseback">
+            </button>
+            <button class="thumbnail" data-index="5">
+              <img src="/placeholder.svg?height=80&width=80" alt="Macro Detail">
+            </button>
+            <button class="thumbnail" data-index="6">
+              <img src="/placeholder.svg?height=80&width=80" alt="Lume Shot">
+            </button>
+          </div>
+
+          <!-- Main Image -->
+          <div class="main-image-container">
+            <img
+              src="/placeholder.svg?height=700&width=700"
+              alt="ONAMI Watch"
+              class="main-image"
+              id="mainImage">
+          </div>
+
+          <!-- Product Info Panel -->
+          <div class="product-info">
+
+            <!-- Reference only (NO PRICE) -->
+            <span class="product-ref">
+              Reference ONAMI-MO-01
+            </span>
+
+            <!-- Primary CTA -->
+            <button class="cta-btn product-cta" id="productCta">
+              Get Early Access
+            </button>
+
+            <!-- ================= ACCORDIONS ================= -->
+            <div class="accordions">
+
+              <!-- Details -->
+              <div class="accordion" data-accordion="details">
+                <button class="accordion-header">
+                  <span class="accordion-title">Details</span>
+                  <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                  <p class="accordion-accroche">
+                    A sculptural case, layered dial, and flowing contrasts
+                    shaped by light.
+                  </p>
+                  <div class="accordion-expanded">
+                    <p>
+                      ONAMI is shaped as a sculptural object, where every
+                      surface responds
+                      to light. Brushed planes and polished transitions reveal
+                      depth
+                      as the watch moves on the wrist.
+                    </p>
+                    <p>
+                      The dial uses a two-layer construction with fumé
+                      gradients,
+                      textured outer rings, and cut numerals revealing a
+                      luminous
+                      lower layer.
+                    </p>
+                    <p class="accordion-highlight">
+                      ONAMI is a tool watch shaped by nature — refined by hand,
+                      designed to be studied, worn, and experienced.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- Impression -->
-          <div class="accordion" data-accordion="impression">
-            <button class="accordion-header">
-              <span class="accordion-title">Impression</span>
-              <span class="accordion-icon"></span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                ONAMI wears with calm balance. Its sculpted case and curved lugs
-                follow the wrist naturally, allowing it to sit comfortably
-                despite its strong presence.
-              </p>
-            </div>
-          </div>
+              <!-- Impression -->
+              <div class="accordion" data-accordion="impression">
+                <button class="accordion-header">
+                  <span class="accordion-title">Impression</span>
+                  <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    ONAMI wears with calm balance. Its sculpted case and curved
+                    lugs
+                    follow the wrist naturally, allowing it to sit comfortably
+                    despite its strong presence.
+                  </p>
+                </div>
+              </div>
 
-          <!-- Specifications -->
-          <div class="accordion" data-accordion="specifications" id="specifications">
-            <button class="accordion-header">
-              <span class="accordion-title">Specifications</span>
-              <span class="accordion-icon"></span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                A concise technical overview of ONAMI’s construction, movement,
-                and performance — engineered for depth and longevity.
-              </p>
-            </div>
-          </div>
+              <!-- Specifications -->
+              <div class="accordion" data-accordion="specifications"
+                id="specifications">
+                <button class="accordion-header">
+                  <span class="accordion-title">Specifications</span>
+                  <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    A concise technical overview of ONAMI’s construction,
+                    movement,
+                    and performance — engineered for depth and longevity.
+                  </p>
+                </div>
+              </div>
 
-          <!-- Story -->
-          <div class="accordion" data-accordion="story">
-            <button class="accordion-header">
-              <span class="accordion-title">The Story of Doussot</span>
-              <span class="accordion-icon"></span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                Sculpted by experience, inspired by the ocean, and refined
-                through years of working steel by hand.
-              </p>
+              <!-- Story -->
+              <div class="accordion" data-accordion="story">
+                <button class="accordion-header">
+                  <span class="accordion-title">The Story of Doussot</span>
+                  <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Sculpted by experience, inspired by the ocean, and refined
+                    through years of working steel by hand.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
 
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- ================= FOOTER ================= -->
-   <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <span class="footer-logo">DOUSSOT</span>
-                <p class="footer-tagline">Sculpting Time, After Time.</p>
-            </div>
-            <div class="footer-links">
-                <a href="#story">Story</a>
-                <a href="#variants">Collection</a>
-                <a href="#specifications">Specifications</a>
-            </div>
-            <div class="footer-social">
-                <a href="#" class="social-link" aria-label="Instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                </a>
-            </div>
+    <section class="get-early-access-section section-padding"
+      id="get-early-access-section">
+      <div class="container">
+        <div class="get-early-access-content">
+          <h3 class="get-early-access-title">Get Early Access</h3>
+          <p class="get-early-access-text">
+            Be the first to know when ONAMI launches.
+          </p>
+          <form class="get-early-access-form" id="emailForm">
+            <input type="email" class="get-early-access-input"
+              placeholder="Enter your email" required>
+            <button type="submit" class="cta-form-submit">Subscribe</button>
+          </form>
+          <p class="get-early-access-note">No spam. Unsubscribe anytime.</p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Doussot. All rights reserved.</p>
+      </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-content">
+      
+         <a href="/" class="logo">
+          <img
+            src="./assets/DOUSSOT_Primary_Horizontal_Master-WHITE.png"
+            alt="DOUSSOT" />
+        </a>
+        
+        <div class="footer-links">
+          <a href="#story">Story</a>
+          <a href="#variants">Collection</a>
+          <a href="#specifications">Specifications</a>
         </div>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round"><rect width="20" height="20" x="2" y="2"
+                rx="5" ry="5" /><path
+                d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line
+                x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Doussot. All rights reserved.</p>
+      </div>
     </footer>
 
-<!-- ================= MOBILE STICKY CTA ================= -->
-<div class="mobile-sticky-cta">
-  <button class="cta-btn">Join the Launch List</button>
-</div>
-
-<!-- ================= EMAIL MODAL ================= -->
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal">
-    <button class="modal-close" id="modalClose">&times;</button>
-    <div class="modal-content">
-      <h3 class="modal-title">Join the Launch List</h3>
-      <p class="modal-text">
-        Be the first to know when ONAMI launches.
-      </p>
-      <form class="modal-form" id="emailForm">
-                    <input type="email" class="modal-input" placeholder="Enter your email" required>
-                    <button type="submit" class="cta-btn modal-submit">Subscribe</button>
-                </form>
-      <p class="modal-note">No spam. Unsubscribe anytime.</p>
+    <!-- ================= MOBILE STICKY CTA ================= -->
+    <div class="mobile-sticky-cta">
+      <button class="cta-btn">Get Early Access</button>
     </div>
-  </div>
-</div>
 
-<script src="./script.js"></script>
-</body>
+    <!-- ================= EMAIL MODAL ================= -->
+    <!-- <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-content">
+          <h3 class="modal-title">Get Early Access</h3>
+          <p class="modal-text">
+            Be the first to know when ONAMI launches.
+          </p>
+          <form class="modal-form" id="emailForm">
+            <input type="email" class="modal-input"
+              placeholder="Enter your email" required>
+            <button type="submit"
+              class="cta-btn modal-submit">Subscribe</button>
+          </form>
+          <p class="modal-note">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="./script.js"></script>
+  </body>
 </html>
