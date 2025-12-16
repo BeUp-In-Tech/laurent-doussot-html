@@ -207,25 +207,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-const MAX_WORDS = 20;
+const MAX_WORDS = 15;
 
 document.querySelectorAll(".read-more-text").forEach((el) => {
-  const words = el.textContent.trim().split(/\s+/);
+  const fullText = el.textContent.trim();
+  const words = fullText.split(/\s+/);
 
   if (words.length <= MAX_WORDS) return;
 
-  const shortText = words.slice(0, MAX_WORDS).join(" ");
-  const fullText = el.textContent;
+  const shortText = words.slice(0, MAX_WORDS).join(" ") + "...";
 
-  el.textContent = shortText + "... ";
+  el.textContent = shortText;
+  el.setAttribute("data-full", fullText);
+  el.setAttribute("data-short", shortText);
+  el.setAttribute("data-expanded", "false");
 
   const btn = document.createElement("button");
   btn.className = "read-more-btn";
   btn.textContent = "Read more";
 
   btn.addEventListener("click", () => {
-    el.textContent = fullText;
-    btn.remove();
+    const expanded = el.getAttribute("data-expanded") === "true";
+
+    if (!expanded) {
+      el.textContent = el.getAttribute("data-full");
+      btn.textContent = "Read less";
+      el.setAttribute("data-expanded", "true");
+    } else {
+      el.textContent = el.getAttribute("data-short");
+      btn.textContent = "Read more";
+      el.setAttribute("data-expanded", "false");
+    }
   });
 
   el.after(btn);
